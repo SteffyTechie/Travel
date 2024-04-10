@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file for styling -->
+    <style>
+        .container {
+            width: 400px; /* Set the width of the container */
+            margin: 0 auto; /* Center the container horizontally */
+        }
+
+        .input-group {
+            margin-bottom: 20px; /* Increase space between input fields */
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%; /* Set the width of input fields to 100% */
+            padding: 10px; /* Increase padding for better readability */
+            font-size: 16px; /* Increase font size for better visibility */
+            border-radius: 5px; /* Add border radius for rounded corners */
+            border: 1px solid #ccc; /* Add border for input fields */
+        }
+
+        button.btn {
+            width: 100%; /* Set the width of the button to 100% */
+            padding: 10px; /* Increase padding for better appearance */
+            font-size: 16px; /* Increase font size for better visibility */
+            border: none; /* Remove border from the button */
+            border-radius: 5px; /* Add border radius for rounded corners */
+            background-color: #007bff; /* Set background color */
+            color: #fff; /* Set text color */
+            cursor: pointer; /* Change cursor to pointer on hover */
+            transition: background-color 0.3s ease; /* Add transition effect */
+        }
+
+        button.btn:hover {
+            background-color: #0056b3; /* Darken background color on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>LOGIN</h2>
+        <br>
+        <br>
+        <form action="login_process.php" method="POST">
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn">Login</button>
+        </form>
+    </div>
+</body>
+</html>
